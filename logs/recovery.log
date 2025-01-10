@@ -1,0 +1,827 @@
+Starting TWRP 3.5.2_10-0-bb4ee714-dirty on Mon Jan  6 21:05:35 2025
+ (pid 287)
+RECOVERY_SDCARD_ON_DATA := true
+I:Lun file '/sys/class/android_usb/android0/f_mass_storage/lun0/file' does not exist, USB storage mode disabled
+I:TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+I:Found brightness file at '/sys/class/leds/lcd-backlight/brightness'
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:LANG: en
+Starting the UI...
+Skipping adf graphics -- not present in build tree
+cannot find/open a drm device: No such file or directory
+fb0 reports (possibly inaccurate):
+  vi.bits_per_pixel = 32
+  vi.red.offset   =   0   .length =   8
+  vi.green.offset =   8   .length =   8
+  vi.blue.offset  =  16   .length =   8
+setting GGL_PIXEL_FORMAT_RGBA_8888
+double buffered
+framebuffer: 3 (800 x 1280)
+Using fbdev graphics.
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+TW_SCREEN_BLANK_ON_BOOT := true
+I:TWFunc::Set_Brightness: Setting brightness control to 0
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:Loading package: splash (/twres/splash.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/splash.xml' directly
+I:Checking resolution...
+I:Scaling theme width 0.740741x and height 0.666667x, offsets x: 0 y: 0 w: 0 h: 0
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page splash
+I:Switching packages (splash)
+I:Loading package: TWRP (/TWRP/theme/ui.zip)
+I:Loading zip theme
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_TW.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_PT.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ja.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/id.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Scaling theme width 0.740741x and height 0.666667x, offsets x: 0 y: 0 w: 0 h: 0
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flash_sleep_and_reboot
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page reboot_system_routine
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page multiuser_warning
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '//TWRP/BACKUPS/HA1BFGGW'
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page fastbootreboot
+I:Loading page reboot
+I:Loading page reboot2
+I:Loading page installapp
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page copylog
+I:Loading page advanced
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page repackselect
+I:Loading page repackconfirm
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page trydecrypt
+I:Loading page canceldecrypt
+I:Loading page terminalcommand
+I:Loading page fastboot
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Loading page decrypt_users
+I:Loading page changeTwrpFolder
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Switching packages (TWRP)
+boot command: bootonce-bootloader
+I:Startup Commands: 
+ro.boot.bootreason=rtc
+ro.boottime.adbd=2261412692
+ro.boottime.init=1776
+ro.boottime.init.selinux=88
+ro.boottime.init.cold_boot_wait=212
+ro.boottime.logd=2245193769
+ro.boottime.ueventd=2023635230
+ro.boottime.recovery=2259344384
+ro.bionic.arch=arm64
+ro.bionic.2nd_arch=arm
+ro.bionic.cpu_variant=generic
+ro.bionic.2nd_cpu_variant=generic
+dalvik.vm.minidebuginfo=true
+dalvik.vm.dex2oat-minidebuginfo=true
+dalvik.vm.dex2oat-max-image-block-size=524288
+dalvik.vm.dex2oat-resolve-startup-strings=true
+debug.atrace.tags.enableflags=0
+ro.com.google.clientidbase=android-google
+ro.com.android.wifi-watchlist=GoogleGuest
+ro.opa.eligible_device=true
+ro.omni.device=TB8505F
+ro.omni.version=10-20211227-TB8505F-HOMEMADE
+ro.omni.version.security_patch=
+ro.twrp.boot=1
+ro.twrp.version=3.5.2_10-0
+ro.wifi.channels=
+ro.allow.mock.location=1
+ro.build.flavor=omni_TB8505F-eng
+ro.build.selinux=1
+ro.build.version.all_codenames=REL
+ro.build.version.preview_sdk_fingerprint=REL
+ro.build.version.min_supported_target_sdk=23
+ro.build.characteristics=default
+ro.bionic.ld.warning=1
+ro.iorapd.enable=false
+ro.kernel.android.checkjni=1
+ro.system.build.id=QQ3A.200805.001
+ro.system.build.date=Mon Dec 27 04:23:57 UTC 2021
+ro.system.build.date.utc=1640579037
+ro.system.build.tags=test-keys
+ro.system.build.type=eng
+ro.system.build.version.sdk=29
+ro.system.build.version.release=16.1.0
+ro.system.build.version.incremental=eng.root.20211227.042448
+ro.system.build.fingerprint=Lenovo/omni_TB8505F/TB8505F:16.1.0/QQ3A.200805.001/root12270423:eng/test-keys
+ro.treble.enabled=true
+ro.product.system.name=omni_TB8505F
+ro.product.system.brand=Lenovo
+ro.product.system.model=Lenovo TB-8505F
+ro.product.system.device=TB8505F
+ro.product.system.manufacturer=LENOVO
+ro.services.whitelist.packagelist=com.google.android.gms
+ro.modversion=OmniROM-10-20211227-TB8505F-HOMEMADE
+ro.postinstall.fstab.prefix=/system
+ro.setupwizard.enterprise_mode=1
+ro.actionable_compatible_property.enabled=true
+init.svc.adbd=restarting
+init.svc.logd=running
+init.svc.ueventd=running
+init.svc.recovery=running
+twrp.crash_counter=0
+twrp.action_complete=0
+ro.config.ringtone=omni_ringtone1.ogg,omni_ringtone1.ogg
+ro.config.alarm_alert=omni_alarm1.ogg
+ro.config.notification_sound=omni_notification1.ogg
+ro.boot.mode=recovery
+ro.boot.name=
+ro.boot.dtb_idx=0
+ro.boot.selinux=permissive
+ro.boot.board_id=Akita_WIFI
+ro.boot.dtbo_idx=0
+ro.boot.hardware=mt8766
+ro.boot.avb_version=1.1
+ro.boot.countrycode=BGE
+ro.boot.fingerprint=Lenovo/LenovoTB-8505F-EEA/8505F:10/QP1A.190711.020/S301002_210730_BMP:user/release-keys
+ro.boot.boot_devices=bootdevice,11230000.mmc
+ro.boot.pcbaserialno=8SSP69A6PBC7HA6412L05KR
+ro.boot.meta_log_disable=0
+ro.boot.verifiedbootstate=orange
+ro.build.id=QQ3A.200805.001
+ro.build.date=Mon Dec 27 04:23:57 UTC 2021
+ro.build.date.utc=1640579037
+ro.build.host=913a747e48bb
+ro.build.tags=test-keys
+ro.build.type=eng
+ro.build.user=root
+ro.build.display.id=omni_TB8505F-eng 16.1.0 QQ3A.200805.001 eng.root.20211227.042448 test-keys
+ro.build.product=TB8505F
+ro.build.version.sdk=29
+ro.build.version.base_os=
+ro.build.version.release=16.1.0
+ro.build.version.codename=REL
+ro.build.version.incremental=eng.root.20211227.042448
+ro.build.version.preview_sdk=0
+ro.build.version.security_patch=2099-12-31
+ro.build.description=omni_TB8505F-eng 16.1.0 QQ3A.200805.001 eng.root.20211227.042448 test-keys
+ro.product.cpu.abi=arm64-v8a
+ro.product.cpu.abilist=armeabi-v7a,armeabi
+ro.product.name=omni_TB8505F
+ro.product.brand=Lenovo
+ro.product.model=Lenovo TB-8505F
+ro.product.device=TB8505F
+ro.product.manufacturer=LENOVO
+ro.baseband=unknown
+ro.bootmode=recovery
+ro.hardware=mt8766
+ro.revision=0
+ro.bootloader=unknown
+ro.debuggable=1
+ro.property_service.version=2
+sys.usb.controller=musb-hdrc
+persist.sys.dalvik.vm.lib.2=libart.so
+ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+ro.minui.pixel_format=RGBX_8888
+ro.zygote=zygote32
+ro.control_privapp_permissions=enforce
+ro.dalvik.vm.native.bridge=0
+dalvik.vm.isa.arm.variant=generic
+dalvik.vm.isa.arm.features=default
+dalvik.vm.isa.arm64.variant=generic
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.usejit=true
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.appimageformat=lz4
+dalvik.vm.usejitprofiles=true
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.image-dex2oat-filter=verify-at-runtime
+ro.odm.build.date=Mon Dec 27 04:23:57 UTC 2021
+ro.odm.build.date.utc=1640579037
+ro.odm.build.fingerprint=Lenovo/omni_TB8505F/TB8505F:16.1.0/QQ3A.200805.001/root12270423:eng/test-keys
+ro.hwui.use_vulkan=
+ro.vndk.version=29
+ro.board.platform=mt6761
+ro.vendor.build.date=Mon Dec 27 04:23:57 UTC 2021
+ro.vendor.build.date.utc=1640579037
+ro.vendor.build.fingerprint=Lenovo/omni_TB8505F/TB8505F:16.1.0/QQ3A.200805.001/root12270423:eng/test-keys
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist64=
+ro.product.odm.name=omni_TB8505F
+ro.product.odm.brand=Lenovo
+ro.product.odm.model=Lenovo TB-8505F
+ro.product.odm.device=TB8505F
+ro.product.odm.manufacturer=LENOVO
+ro.product.board=mt6761
+ro.product.vendor.name=omni_TB8505F
+ro.product.vendor.brand=Lenovo
+ro.product.vendor.model=Lenovo TB-8505F
+ro.product.vendor.device=TB8505F
+ro.product.vendor.manufacturer=LENOVO
+ro.product.first_api_level=28
+ro.bootimage.build.date=Mon Dec 27 04:23:57 UTC 2021
+ro.bootimage.build.date.utc=1640579037
+ro.bootimage.build.fingerprint=Lenovo/omni_TB8505F/TB8505F:16.1.0/QQ3A.200805.001/root12270423:eng/test-keys
+ro.build.fingerprint=Lenovo/omni_TB8505F/TB8505F:16.1.0/QQ3A.200805.001/eng.root.20211227.042448:eng/test-keys
+pm.dexopt.boot=extract
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.shared=speed
+pm.dexopt.install=speed-profile
+pm.dexopt.inactive=verify
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.first-boot=extract
+ro.secure=0
+sys.usb.config=adb
+sys.usb.configfs=1
+sys.usb.ffs.aio_compat=1
+ro.gsid.image_running=0
+persist.debug.dalvik.vm.core_platform_api_policy=just-warn
+ro.persistent_properties.ready=true
+ro.boot.serialno=HA1BFGGW
+ro.serialno=HA1BFGGW
+service.adb.root=1
+net.bt.name=Android
+net.tethering.noprovisioning=true
+persist.sys.usb.config=adb
+persist.sys.disable_rescue=true
+ro.odm.build.id=QQ3A.200805.001
+ro.odm.build.tags=test-keys
+ro.odm.build.type=eng
+ro.odm.build.version.sdk=29
+ro.odm.build.version.release=16.1.0
+ro.odm.build.version.incremental=eng.root.20211227.042448
+ro.odm.product.cpu.abilist=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist64=
+ro.vendor.build.id=QQ3A.200805.001
+ro.vendor.build.tags=test-keys
+ro.vendor.build.type=eng
+ro.vendor.build.version.sdk=29
+ro.vendor.build.version.release=16.1.0
+ro.vendor.build.version.incremental=eng.root.20211227.042448
+ro.vendor.product.cpu.abilist=armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist64=
+vendor.usb.acm_cnt=0
+vendor.usb.acm_port0=
+vendor.usb.acm_port1=
+vendor.usb.acm_enable=0
+vendor.usb.controller=musb-hdrc
+ro.vendor.build.security_patch=2099-12-31
+
+=> Linking mtab
+=> Processing /etc/recovery.fstab
+I:Reading /etc/twrp.flags
+I:Reading /etc/recovery.fstab
+I:Processing '/system'
+I:Created '/system_root' folder.
+I:Unhandled flag: 'avb=vbmeta'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/vendor'
+I:Unhandled flag: 'avb'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/data'
+I:Unhandled flag: 'quota'
+I:Unhandled flag: 'reservedsize=200M'
+I:Processing '/misc'
+I:Processing remaining twrp.flags
+I:Processing '/boot'
+I:Processing '/cache'
+I:Processing '/external_sd'
+I:Created '/external_sd' folder.
+I:Processing '/persist'
+I:Created '/persist' folder.
+I:Processing '/recovery'
+I:Processing '/system_image'
+I:Processing '/usb-otg'
+I:Created '/usb-otg' folder.
+I:Processing '/vbmeta'
+I:Done processing fstab files
+I:Setting up '/data' as data/media emulated storage.
+I:Can't probe device /dev/block/mmcblk0p38
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+Unable to recreate /data/media folder.
+I:Backup folder set to '/data/media/TWRP/BACKUPS/HA1BFGGW'
+I:Settings storage is '/data/media'
+Updating partition details...
+I:checking for twrp app
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+...done
+I:Can't probe device /dev/block/mmcblk0p38
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+Unable to mount storage
+I:Unmounting main partitions...
+Updating partition details...
+I:checking for twrp app
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+...done
+I:Can't probe device /dev/block/mmcblk0p38
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+Unable to mount storage
+SELinux contexts loaded from /file_contexts
+Full SELinux support is present.
+tw_get_context failed to get selinux context
+I:Failed to get default contexts and file mode for storage files.
+
+
+Partition Logs:
+/system_root | /dev/block/mmcblk0p37 | Size: 3774MB Used: 3025MB Free: 748MB Backup Size: 3025MB
+   Flags: Can_Be_Mounted IsPresent Mount_Read_Only 
+   Primary_Block_Device: /dev/block/mmcblk0p37
+   Display_Name: System
+   Storage_Name: System
+   Backup_Path: /system_root
+   Backup_Name: system
+   Backup_Display_Name: System
+   Storage_Path: /system_root
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/vendor | /dev/block/mmcblk0p36 | Size: 774MB Used: 314MB Free: 460MB Backup Size: 314MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent Mount_Read_Only 
+   Primary_Block_Device: /dev/block/mmcblk0p36
+   Display_Name: Vendor
+   Storage_Name: Vendor
+   Backup_Path: /vendor
+   Backup_Name: vendor
+   Backup_Display_Name: Vendor
+   Storage_Path: /vendor
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/data | /dev/block/mmcblk0p38 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+   Symlink_Path: /data/media
+   Symlink_Mount_Point: /sdcard
+   Primary_Block_Device: /dev/block/mmcblk0p38
+   Crypto_Key_Location: /dev/block/platform/bootdevice/by-name/metadata
+   Display_Name: Data
+   Storage_Name: Internal Storage
+   Backup_Path: /data
+   Backup_Name: data
+   Backup_Display_Name: Data
+   Storage_Path: /data/media
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   Mount_Flags: 1030, Mount_Options: noauto_da_alloc,nobarrier
+   MTP_Storage_ID: 65537
+
+/misc | /dev/block/mmcblk0p3 | Size: 0MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p3
+   Display_Name: misc
+   Storage_Name: misc
+   Backup_Path: /misc
+   Backup_Name: misc
+   Backup_Display_Name: misc
+   Storage_Path: /misc
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/boot | /dev/block/mmcblk0p28 | Size: 32MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p28
+   Display_Name: Boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: Boot
+   Storage_Path: /boot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/cache | /dev/block/mmcblk0p32 | Size: 223MB Used: 0MB Free: 223MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p32
+   Display_Name: Cache
+   Storage_Name: Cache
+   Backup_Path: /cache
+   Backup_Name: cache
+   Backup_Display_Name: Cache
+   Storage_Path: /cache
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/external_sd |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
+   Primary_Block_Device: /dev/block/mmcblk1p1
+   Alternate_Block_Device: /dev/block/mmcblk1
+   Display_Name: external_sd
+   Storage_Name: external_sd
+   Backup_Path: /external_sd
+   Backup_Name: external_sd
+   Backup_Display_Name: external_sd
+   Storage_Path: /external_sd
+   Current_File_System: auto
+   Fstab_File_System: auto
+   Backup_Method: files
+   MTP_Storage_ID: 65538
+
+/persist | /dev/block/mmcblk0p15 | Size: 42MB Used: 0MB Free: 42MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p15
+   Display_Name: persist
+   Storage_Name: persist
+   Backup_Path: /persist
+   Backup_Name: persist
+   Backup_Display_Name: persist
+   Storage_Path: /persist
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/recovery | /dev/block/mmcblk0p2 | Size: 32MB
+   Flags: IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p2
+   Display_Name: Recovery
+   Storage_Name: recovery
+   Backup_Path: /recovery
+   Backup_Name: recovery
+   Backup_Display_Name: Recovery
+   Storage_Path: /recovery
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/system_image | /dev/block/mmcblk0p37 | Size: 3896MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p37
+   Display_Name: System Image
+   Storage_Name: system_image
+   Backup_Path: /system_image
+   Backup_Name: system_image
+   Backup_Display_Name: System Image
+   Storage_Path: /system_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/usb-otg |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
+   Primary_Block_Device: /dev/block/sda1
+   Alternate_Block_Device: /dev/block/sda
+   Display_Name: usb-otg
+   Storage_Name: usb-otg
+   Backup_Path: /usb-otg
+   Backup_Name: usb-otg
+   Backup_Display_Name: usb-otg
+   Storage_Path: /usb-otg
+   Current_File_System: auto
+   Fstab_File_System: auto
+   Backup_Method: files
+   MTP_Storage_ID: 65539
+
+/vbmeta | /dev/block/mmcblk0p13 | Size: 8MB
+   Flags: IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p13
+   Display_Name: vbmeta
+   Storage_Name: vbmeta
+   Backup_Path: /vbmeta
+   Backup_Name: vbmeta
+   Backup_Display_Name: vbmeta
+   Storage_Path: /vbmeta
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+I:Can't probe device /dev/block/mmcblk0p38
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+Unable to mount /data/media/TWRP/.twrps
+I:Attempt to load settings from settings file...
+I:InfoManager file '/data/media/TWRP/.twrps' not found.
+I:Backup folder set to '/data/media/TWRP/BACKUPS/HA1BFGGW'
+I:Mount: Unable to find partition for path '/etc'
+I:Copied file /etc/recovery.fstab to /cache/recovery/recovery.fstab
+I:Version number saved to '/cache/recovery/.version'
+I:Can't probe device /dev/block/mmcblk0p38
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Unable to mount '/external_sd'
+I:Actual block device: '', current file system: 'auto'
+I:Unable to mount '/usb-otg'
+I:Actual block device: '', current file system: 'auto'
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:Starting MTP
+I:Cannot find file /sys/class/android_usb/android0/idVendor
+I:Cannot find file /sys/class/android_usb/android0/idProduct
+I:[MTP] Starting MTP
+I:Can't probe device /dev/block/mmcblk0p38
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+MTP Enabled
+I:Switching packages (TWRP)
+I:Set page: 'system_readonly'
+I:[MTP] created new mtpserver object
+E:[MTP] Failed to start usb driver!I:Found no matching fstab entry for uevent device '/devices/platform/externdevice/mmc_host/mmc1/mmc1:b368/block/mmcblk1' - add
+I:operation_start: 'Toggle System Mount'
+I:operation_end - status=0
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Path /cache/recovery/log.gz does not exist. Unable to copy /cache/recovery/last_log.gz
+I:Starting Adb Backup FIFO
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/TWRP/BACKUPS/HA1BFGGW'
+I:checking for twrp app
+I:Can't probe device /dev/block/mmcblk0p38
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Data partition cannot be mounted during app check
+I:App not installed
+I:Switching packages (TWRP)
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'wipe'
+I:Set page: 'formatdata'
+I:Set page: 'wipe'
+I:Set page: 'advancedwipe'
+I:Set page: 'action_page'
+I:operation_start: 'Format'
+I:wipe list ''
+Updating partition details...
+I:checking for twrp app
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:cmd: /system/bin/exfat-fuse -o big_writes,max_read=131072,max_write=131072 /dev/block/mmcblk1p1 /external_sd
+I:sending message to remove 65538
+I:Message sent, remove storage ID: 65538
+I:[MTP] mtppipe remove storage 65538
+...done
+I:Can't probe device /dev/block/mmcblk0p38
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+Unable to mount storage
+I:Set page: 'action_complete'
+I:operation_end - status=0
+I:Set page: 'clear_vars'
+I:Set page: 'advancedwipe'
+I:Set page: 'wipe'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'install'
+I:Set overlay: 'select_storage'
+I:cmd: /system/bin/exfat-fuse -o big_writes,max_read=131072,max_write=131072 /dev/block/mmcblk1p1 /external_sd
+I:No recovery folder found. Using default folder.
+I:Backup folder set to '/external_sd/TWRP/BACKUPS/HA1BFGGW'
+I:Set overlay: ''
+I:Set page: 'clear_vars'
+I:Set page: 'install'
+I:Set page: 'flash_confirm'
+I:Set page: 'flash_zip'
+I:operation_start: 'Flashing'
+Installing zip file '/external_sd/lineage-17.1-20250106-UNOFFICIAL-akita_row_wifi.zip'
+Unmounting System...
+I:Update binary zip
+Verifying package compatibility...
+Package doesn't contain compatibility.zip entry
+I:Extracting updater binary 'META-INF/com/google/android/update-binary'
+I:Zip does not contain SELinux file_contexts file in its root.
+I:Legacy property environment not used in updater.
+SELinux:  Skipping /product_file_contexts:  empty file
+SELinux:  Skipping /odm_file_contexts:  empty file
+SELinux: Loaded file_contexts
+script aborted: E3004: This package is for device: akita_row_wifi; this device is TB8505F.
+E3004: This package is for device: akita_row_wifi; this device is TB8505F.error: 3004
+Updater process ended with ERROR: 7
+I:Install took 0 second(s).
+Error installing zip file '/external_sd/lineage-17.1-20250106-UNOFFICIAL-akita_row_wifi.zip'
+Updating partition details...
+I:checking for twrp app
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+...done
+I:Set page: 'flash_done'
+I:operation_end - status=1
+I:Set page: 'clear_vars'
+I:Set page: 'install'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'advanced'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'mount'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Unable to mount '/usb-otg'
+I:Actual block device: '', current file system: 'auto'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'mount'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Set overlay: 'select_storage'
+I:Set overlay: ''
+I:Set page: 'clear_vars'
+I:Set page: 'mount'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'install'
+I:Set page: 'flash_confirm'
+I:Set page: 'flash_zip'
+I:operation_start: 'Flashing'
+Installing zip file '/external_sd/lineage-17.1-20250106-UNOFFICIAL-akita_row_wifi.zip'
+Unmounting System...
+I:Update binary zip
+Verifying package compatibility...
+Package doesn't contain compatibility.zip entry
+I:Extracting updater binary 'META-INF/com/google/android/update-binary'
+I:Zip does not contain SELinux file_contexts file in its root.
+I:Legacy property environment not used in updater.
+SELinux:  Skipping /product_file_contexts:  empty file
+SELinux:  Skipping /odm_file_contexts:  empty file
+SELinux: Loaded file_contexts
+script aborted: E3004: This package is for device: akita_row_wifi; this device is TB8505F.
+E3004: This package is for device: akita_row_wifi; this device is TB8505F.error: 3004
+Updater process ended with ERROR: 7
+I:Install took 0 second(s).
+Error installing zip file '/external_sd/lineage-17.1-20250106-UNOFFICIAL-akita_row_wifi.zip'
+Updating partition details...
+I:checking for twrp app
+I:Can't probe device /dev/block/mmcblk0p38
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+...done
+I:Set page: 'flash_done'
+I:operation_end - status=1
+I:Set page: 'clear_vars'
+I:Set page: 'install'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'advanced'
+I:Set page: 'copylog'
+I:Set page: 'action_page'
+I:operation_start: 'Copy Log'

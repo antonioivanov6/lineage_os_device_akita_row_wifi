@@ -1,0 +1,13 @@
+# ueventd.mt6761.rc - Конфигурационен файл за устройства
+
+# Създаване на устройство /dev/Vcodec
+/dev/Vcodec 0660 system system c 160 0
+
+# Създаване на устройство /dev/Vcodec2
+# /dev/Vcodec2 0660 system system c 160 1
+
+# Създаване на устройство /dev/fm
+/dev/fm 0660 system system c 193 0
+
+# Създаване на устройство /dev/devmap
+/dev/devmap 0660 system system c 196 0
