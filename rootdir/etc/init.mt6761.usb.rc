@@ -156,14 +156,14 @@ property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x202A
 on property:sys.usb.config=mtp && \
 property:sys.usb.configfs=1
-setprop vendor.usb.pid 0x7C35	
+setprop vendor.usb.pid 0x7C35
 on property:sys.usb.config=mtp && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C29
 on property:sys.usb.config=mtp && property:ro.boot.board_id=Anna_ROW_LTE && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C29
-    
+
 on property:sys.usb.config=mtp && property:vendor.usb.acm_enable=1 && \
 property:sys.usb.configfs=1
     write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "mtp_acm"
@@ -198,7 +198,7 @@ property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x2026
 on property:sys.usb.config=mtp,adb && \
 property:sys.usb.configfs=1
-setprop vendor.usb.pid 0x7C36	
+setprop vendor.usb.pid 0x7C36
 on property:sys.usb.config=mtp,adb && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C2A
@@ -241,15 +241,15 @@ on property:sys.usb.config=ptp && property:vendor.usb.acm_cnt=2 && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x202B
 on property:sys.usb.config=ptp && \
-property:sys.usb.configfs=1	
-setprop vendor.usb.pid 0x7C39	
+property:sys.usb.configfs=1
+setprop vendor.usb.pid 0x7C39
 on property:sys.usb.config=ptp && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C2D
 on property:sys.usb.config=ptp && property:ro.boot.board_id=Anna_ROW_LTE && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C2D
-	
+
 on property:sys.usb.config=ptp && property:vendor.usb.acm_enable=1 && \
 property:sys.usb.configfs=1
     write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "ptp_acm"
@@ -281,15 +281,15 @@ on property:sys.usb.config=ptp,adb && property:vendor.usb.acm_cnt=2 && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x2027
 on property:sys.usb.config=ptp,adb && \
-property:sys.usb.configfs=1	
-setprop vendor.usb.pid 0x7C3A	
+property:sys.usb.configfs=1
+setprop vendor.usb.pid 0x7C3A
 on property:sys.usb.config=ptp,adb && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C2E
 on property:sys.usb.config=ptp,adb && property:ro.boot.board_id=Anna_ROW_LTE && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C2E
-	
+
 on property:sys.usb.ffs.ready=1 && property:sys.usb.config=ptp,adb && \
 property:vendor.usb.acm_enable=1 && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "ptp_adb_acm"
@@ -323,14 +323,14 @@ on property:sys.usb.config=rndis && property:vendor.usb.acm_cnt=2 && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x202C
 on property:sys.usb.config=rndis && \
-property:sys.usb.configfs=1	
+property:sys.usb.configfs=1
 setprop vendor.usb.pid 0x7C3B
 on property:sys.usb.config=rndis && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C2F
 on property:sys.usb.config=rndis && property:ro.boot.board_id=Anna_ROW_LTE && \
 property:sys.usb.configfs=1
-    setprop vendor.usb.pid 0x7C2F	
+    setprop vendor.usb.pid 0x7C2F
 
 on property:sys.usb.config=rndis && property:vendor.usb.acm_enable=1 && \
 property:sys.usb.configfs=1
@@ -364,14 +364,14 @@ on property:sys.usb.config=rndis,adb && property:vendor.usb.acm_cnt=2 && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x2028
 on property:sys.usb.config=rndis,adb && \
-property:sys.usb.configfs=1	
+property:sys.usb.configfs=1
 setprop vendor.usb.pid 0x7C3C
 on property:sys.usb.config=rndis,adb && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C30
 on property:sys.usb.config=rndis,adb && property:ro.boot.board_id=Anna_ROW_LTE && \
 property:sys.usb.configfs=1
-    setprop vendor.usb.pid 0x7C30		
+    setprop vendor.usb.pid 0x7C30
 
 on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,adb && \
 property:vendor.usb.acm_enable=1 && property:sys.usb.configfs=1
@@ -544,7 +544,7 @@ property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x202D
 on property:sys.usb.config=mass_storage && \
 property:sys.usb.configfs=1
-setprop vendor.usb.pid 0x7C33	
+setprop vendor.usb.pid 0x7C33
 on property:sys.usb.config=mass_storage && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C27
@@ -583,14 +583,14 @@ property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x2029
 on property:sys.usb.config=mass_storage,adb && \
 property:sys.usb.configfs=1
-setprop vendor.usb.pid 0x7C34	
+setprop vendor.usb.pid 0x7C34
 on property:sys.usb.config=mass_storage,adb && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C28
 on property:sys.usb.config=mass_storage,adb && property:ro.boot.board_id=Anna_ROW_LTE && \
 property:sys.usb.configfs=1
-    setprop vendor.usb.pid 0x7C28	
-	
+    setprop vendor.usb.pid 0x7C28
+
 on property:sys.usb.config=mass_storage,adb && property:sys.usb.configfs=1
     start adbd
 
@@ -628,14 +628,14 @@ property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x202D
 on property:sys.usb.config=bicr && \
 property:sys.usb.configfs=1
-setprop vendor.usb.pid 0x7C3D	
+setprop vendor.usb.pid 0x7C3D
 on property:sys.usb.config=bicr && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C31
 on property:sys.usb.config=bicr && property:ro.boot.board_id=Anna_ROW_LTE && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C31
-	
+
 on property:sys.usb.config=bicr && property:vendor.usb.acm_enable=1 && \
 property:sys.usb.configfs=1
     write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "ums_acm"
@@ -671,14 +671,14 @@ property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x2029
 on property:sys.usb.config=bicr,adb && \
 property:sys.usb.configfs=1
-setprop vendor.usb.pid 0x7C3E	
+setprop vendor.usb.pid 0x7C3E
 on property:sys.usb.config=bicr,adb && property:ro.boot.board_id=Anna_WIFI && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C32
 on property:sys.usb.config=bicr,adb && property:ro.boot.board_id=Anna_ROW_LTE && \
 property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x7C32
-	
+
 on property:sys.usb.config=bicr,adb && property:sys.usb.configfs=1
     start adbd
 
@@ -908,13 +908,15 @@ on property:sys.usb.config=cdp && property:sys.usb.configfs=1
     setprop vendor.usb.pid 0x2008
 
 on property:sys.usb.config=charging_yes
+    setprop vendor.usb.state ${sys.usb.state}
     setprop vendor.usb.charging yes
     setprop sys.usb.config none
-    setprop sys.usb.config ${sys.usb.state}
+    setprop sys.usb.config ${vendor.usb.state}
 
 on property:sys.usb.config=charging_no
+    setprop vendor.usb.state ${sys.usb.state}
     setprop sys.usb.config none
-    setprop sys.usb.config ${sys.usb.state}
+    setprop sys.usb.config ${vendor.usb.state}
     setprop vendor.usb.charging no
 
 on property:vendor.usb.charging=yes
@@ -986,5 +988,7 @@ on property:persist.vendor.usb.printk=*
 	setprop vendor.usb.printk ${persist.vendor.usb.printk}
 
 ### PLATFORM VARIANT, cat $rc_file | grep write | sort | grep -vE "android0|usb20_phy" | awk '{print $2}' | uniq ###
+
 on property:ro.factory_mode=1
-	setprop persist.vendor.radio.port_index 1
+    setprop persist.vendor.radio.port_index 1
+
