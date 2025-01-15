@@ -1,5 +1,5 @@
-Starting TWRP 3.5.2_10-0-bb4ee714-dirty on Mon Jan  6 21:05:35 2025
- (pid 287)
+Starting TWRP 3.5.2_10-0-bb4ee714-dirty on Mon Jan 13 17:00:15 2025
+ (pid 290)
 RECOVERY_SDCARD_ON_DATA := true
 I:Lun file '/sys/class/android_usb/android0/f_mass_storage/lun0/file' does not exist, USB storage mode disabled
 I:TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
@@ -164,16 +164,15 @@ I:Loading page changeTwrpFolder
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
 I:Switching packages (TWRP)
-boot command: bootonce-bootloader
 I:Startup Commands: 
 ro.boot.bootreason=rtc
-ro.boottime.adbd=2261412692
-ro.boottime.init=1776
-ro.boottime.init.selinux=88
+ro.boottime.adbd=2272682538
+ro.boottime.init=1781
+ro.boottime.init.selinux=87
 ro.boottime.init.cold_boot_wait=212
-ro.boottime.logd=2245193769
-ro.boottime.ueventd=2023635230
-ro.boottime.recovery=2259344384
+ro.boottime.logd=2256713538
+ro.boottime.ueventd=2035574692
+ro.boottime.recovery=2270738384
 ro.bionic.arch=arm64
 ro.bionic.2nd_arch=arm
 ro.bionic.cpu_variant=generic
@@ -399,44 +398,29 @@ I:Created '/usb-otg' folder.
 I:Processing '/vbmeta'
 I:Done processing fstab files
 I:Setting up '/data' as data/media emulated storage.
-I:Can't probe device /dev/block/mmcblk0p38
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-Unable to recreate /data/media folder.
+I:Recreating /data/media folder.
+I:/system/bin/mount -o bind '/data/media' '/sdcard' process ended with RC=0
+I:Recreating /cache/recovery folder
+I:No recovery folder found. Using default folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/HA1BFGGW'
 I:Settings storage is '/data/media'
 Updating partition details...
 I:checking for twrp app
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Data backup size is 0MB, free: 23474MB.
 ...done
-I:Can't probe device /dev/block/mmcblk0p38
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-Unable to mount storage
 I:Unmounting main partitions...
 Updating partition details...
 I:checking for twrp app
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Data backup size is 0MB, free: 23474MB.
 ...done
-I:Can't probe device /dev/block/mmcblk0p38
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-Unable to mount storage
 SELinux contexts loaded from /file_contexts
 Full SELinux support is present.
-tw_get_context failed to get selinux context
-I:Failed to get default contexts and file mode for storage files.
+tw_get_context got selinux context: u:object_r:system_data_file:s0
+I:Got default contexts and file mode for storage files.
 
 
 Partition Logs:
-/system_root | /dev/block/mmcblk0p37 | Size: 3774MB Used: 3025MB Free: 748MB Backup Size: 3025MB
+/system_root | /dev/block/mmcblk0p37 | Size: 3834MB Used: 1286MB Free: 2547MB Backup Size: 1286MB
    Flags: Can_Be_Mounted IsPresent Mount_Read_Only 
    Primary_Block_Device: /dev/block/mmcblk0p37
    Display_Name: System
@@ -449,7 +433,7 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
-/vendor | /dev/block/mmcblk0p36 | Size: 774MB Used: 314MB Free: 460MB Backup Size: 314MB
+/vendor | /dev/block/mmcblk0p36 | Size: 787MB Used: 288MB Free: 499MB Backup Size: 288MB
    Flags: Can_Be_Mounted Can_Be_Wiped IsPresent Mount_Read_Only 
    Primary_Block_Device: /dev/block/mmcblk0p36
    Display_Name: Vendor
@@ -462,7 +446,7 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
-/data | /dev/block/mmcblk0p38 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+/data | /dev/block/mmcblk0p38 | Size: 23518MB Used: 0MB Free: 23474MB Backup Size: 0MB
    Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
    Symlink_Path: /data/media
    Symlink_Mount_Point: /sdcard
@@ -506,7 +490,7 @@ Partition Logs:
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/cache | /dev/block/mmcblk0p32 | Size: 223MB Used: 0MB Free: 223MB Backup Size: 0MB
+/cache | /dev/block/mmcblk0p32 | Size: 171MB Used: 0MB Free: 171MB Backup Size: 0MB
    Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent 
    Primary_Block_Device: /dev/block/mmcblk0p32
    Display_Name: Cache
@@ -601,22 +585,14 @@ Partition Logs:
    Fstab_File_System: emmc
    Backup_Method: dd
 
-I:Can't probe device /dev/block/mmcblk0p38
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-Unable to mount /data/media/TWRP/.twrps
+I:No recovery folder found. Using default folder.
 I:Attempt to load settings from settings file...
 I:InfoManager file '/data/media/TWRP/.twrps' not found.
+I:No recovery folder found. Using default folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/HA1BFGGW'
 I:Mount: Unable to find partition for path '/etc'
 I:Copied file /etc/recovery.fstab to /cache/recovery/recovery.fstab
 I:Version number saved to '/cache/recovery/.version'
-I:Can't probe device /dev/block/mmcblk0p38
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
 I:Unable to mount '/external_sd'
 I:Actual block device: '', current file system: 'auto'
 I:Unable to mount '/usb-otg'
@@ -626,14 +602,14 @@ I:Starting MTP
 I:Cannot find file /sys/class/android_usb/android0/idVendor
 I:Cannot find file /sys/class/android_usb/android0/idProduct
 I:[MTP] Starting MTP
-I:Can't probe device /dev/block/mmcblk0p38
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:sending message to add 65537 '/data/media' 'Internal Storage'
+I:Message sent, add storage ID: 65537 '/data/media'
 MTP Enabled
 I:Switching packages (TWRP)
 I:Set page: 'system_readonly'
 I:[MTP] created new mtpserver object
-E:[MTP] Failed to start usb driver!I:Found no matching fstab entry for uevent device '/devices/platform/externdevice/mmc_host/mmc1/mmc1:b368/block/mmcblk1' - add
+E:[MTP] Failed to start usb driver!I:[MTP] mtppipe add storage 65537 '/data/media'
+I:Found no matching fstab entry for uevent device '/devices/platform/externdevice/mmc_host/mmc1/mmc1:b368/block/mmcblk1' - add
 I:operation_start: 'Toggle System Mount'
 I:operation_end - status=0
 I:Set page: 'main'
@@ -648,176 +624,19 @@ I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' dire
 parsing languageFile
 parsing languageFile done
 I:Translating partition display names
+I:No recovery folder found. Using default folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/HA1BFGGW'
 I:checking for twrp app
-I:Can't probe device /dev/block/mmcblk0p38
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Data partition cannot be mounted during app check
 I:App not installed
 I:Switching packages (TWRP)
 I:Set page: 'main'
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
-I:Set page: 'wipe'
-I:Set page: 'formatdata'
-I:Set page: 'wipe'
-I:Set page: 'advancedwipe'
-I:Set page: 'action_page'
-I:operation_start: 'Format'
-I:wipe list ''
-Updating partition details...
-I:checking for twrp app
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
+I:Set page: 'mount'
 I:cmd: /system/bin/exfat-fuse -o big_writes,max_read=131072,max_write=131072 /dev/block/mmcblk1p1 /external_sd
-I:sending message to remove 65538
-I:Message sent, remove storage ID: 65538
-I:[MTP] mtppipe remove storage 65538
-...done
-I:Can't probe device /dev/block/mmcblk0p38
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-Unable to mount storage
-I:Set page: 'action_complete'
-I:operation_end - status=0
-I:Set page: 'clear_vars'
-I:Set page: 'advancedwipe'
-I:Set page: 'wipe'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'install'
-I:Set overlay: 'select_storage'
-I:cmd: /system/bin/exfat-fuse -o big_writes,max_read=131072,max_write=131072 /dev/block/mmcblk1p1 /external_sd
-I:No recovery folder found. Using default folder.
-I:Backup folder set to '/external_sd/TWRP/BACKUPS/HA1BFGGW'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-I:Set page: 'flash_confirm'
-I:Set page: 'flash_zip'
-I:operation_start: 'Flashing'
-Installing zip file '/external_sd/lineage-17.1-20250106-UNOFFICIAL-akita_row_wifi.zip'
-Unmounting System...
-I:Update binary zip
-Verifying package compatibility...
-Package doesn't contain compatibility.zip entry
-I:Extracting updater binary 'META-INF/com/google/android/update-binary'
-I:Zip does not contain SELinux file_contexts file in its root.
-I:Legacy property environment not used in updater.
-SELinux:  Skipping /product_file_contexts:  empty file
-SELinux:  Skipping /odm_file_contexts:  empty file
-SELinux: Loaded file_contexts
-script aborted: E3004: This package is for device: akita_row_wifi; this device is TB8505F.
-E3004: This package is for device: akita_row_wifi; this device is TB8505F.error: 3004
-Updater process ended with ERROR: 7
-I:Install took 0 second(s).
-Error installing zip file '/external_sd/lineage-17.1-20250106-UNOFFICIAL-akita_row_wifi.zip'
-Updating partition details...
-I:checking for twrp app
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-...done
-I:Set page: 'flash_done'
-I:operation_end - status=1
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'advanced'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'mount'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Unable to mount '/usb-otg'
-I:Actual block device: '', current file system: 'auto'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'mount'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-I:Set overlay: 'select_storage'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'mount'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'install'
-I:Set page: 'flash_confirm'
-I:Set page: 'flash_zip'
-I:operation_start: 'Flashing'
-Installing zip file '/external_sd/lineage-17.1-20250106-UNOFFICIAL-akita_row_wifi.zip'
-Unmounting System...
-I:Update binary zip
-Verifying package compatibility...
-Package doesn't contain compatibility.zip entry
-I:Extracting updater binary 'META-INF/com/google/android/update-binary'
-I:Zip does not contain SELinux file_contexts file in its root.
-I:Legacy property environment not used in updater.
-SELinux:  Skipping /product_file_contexts:  empty file
-SELinux:  Skipping /odm_file_contexts:  empty file
-SELinux: Loaded file_contexts
-script aborted: E3004: This package is for device: akita_row_wifi; this device is TB8505F.
-E3004: This package is for device: akita_row_wifi; this device is TB8505F.error: 3004
-Updater process ended with ERROR: 7
-I:Install took 0 second(s).
-Error installing zip file '/external_sd/lineage-17.1-20250106-UNOFFICIAL-akita_row_wifi.zip'
-Updating partition details...
-I:checking for twrp app
-I:Can't probe device /dev/block/mmcblk0p38
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p38', current file system: 'ext4'
-...done
-I:Set page: 'flash_done'
-I:operation_end - status=1
-I:Set page: 'clear_vars'
-I:Set page: 'install'
+I:sending message to add 65538 '/external_sd' 'Micro SD card'
+I:Message sent, add storage ID: 65538 '/external_sd'
+I:[MTP] mtppipe add storage 65538 '/external_sd'
 I:Set page: 'main'
 I:Set page: 'clear_vars'
 I:Set page: 'main2'

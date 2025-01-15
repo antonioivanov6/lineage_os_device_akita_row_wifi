@@ -6,9 +6,9 @@
 # 1 "<built-in>" 2
 # 1 "vendor/mediatek/proprietary/hardware/fstab/mt6761/fstab.in.mt6761" 2
 # 123 "vendor/mediatek/proprietary/hardware/fstab/mt6761/fstab.in.mt6761"
-/dev/block/platform/bootdevice/by-name/system /system ext4 ro wait,,avb=vbmeta,first_stage_mount
+/dev/block/platform/bootdevice/by-name/system /system ext4 ro wait,first_stage_mount #avb=vbmeta
 
-/dev/block/platform/bootdevice/by-name/vendor /vendor ext4 ro wait,,avb,first_stage_mount
+/dev/block/platform/bootdevice/by-name/vendor /vendor ext4 ro wait,first_stage_mount #avb
 # 139 "vendor/mediatek/proprietary/hardware/fstab/mt6761/fstab.in.mt6761"
 /dev/block/platform/bootdevice/by-name/userdata /data ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=panic,nobarrier wait,check,quota,reservedsize=200M,formattable,forcefdeorfbe=/dev/block/platform/bootdevice/by-name/metadata
 
